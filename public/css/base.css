@@ -391,6 +391,7 @@ section.home {
 	float: left;
 	clear: both;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #clock span {
@@ -739,7 +740,7 @@ footer .iconSocial {
 ===================================================================================================*/
 @media only screen and (max-width: 1440px) {
 	section.home {
-		height: 600px;
+		height: 700px;
 	}
 }
 
@@ -918,7 +919,7 @@ left: 44px;
 		margin: 130px 0 0 0;
 	}
 	section.home {
-		height: 500px;
+		height: 600px;
 	}
 	.home h1 {
 		font-size: 2em;
@@ -928,6 +929,10 @@ left: 44px;
 		font-size: 1em;
 	}
 	
+
+#clock {
+
+}  
 #clock p {
 		margin: 0 20px 0 0;
 		line-height: 24px;

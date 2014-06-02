@@ -367,7 +367,7 @@ header .sub-row {
 
 /*==home section css===*/
 section.home {
-	height: 700px;
+	height: 800px;
 	/*background: url("../img/bg9.jpg") no-repeat scroll center top transparent;*/
 	background-size: cover;
 	background-position: 0 0;
@@ -740,7 +740,7 @@ footer .iconSocial {
 ===================================================================================================*/
 @media only screen and (max-width: 1440px) {
 	section.home {
-		height: 700px;
+		height: 800px;
 	}
 }
 
@@ -919,7 +919,7 @@ left: 44px;
 		margin: 130px 0 0 0;
 	}
 	section.home {
-		height: 600px;
+		height: 700px;
 	}
 	.home h1 {
 		font-size: 2em;

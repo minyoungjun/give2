@@ -1,7 +1,9 @@
 class MainController < ApplicationController
+
   def mail
     @sub = Subscribe.all
   end
+
   def add_subscribe
     if Subscribe.where(:address => params[:address]).count < 1
       subscribe = Subscribe.new
@@ -18,8 +20,8 @@ class MainController < ApplicationController
   end
   def add_feedback
     feedback = Feedback.new
-    feedback.realname = params[:realname]
-    feedback.address = params[:address]
+    feedback.realname = params[:name]
+    feedback.address = params[:email]
     feedback.content = params[:content]
     feedback.save
   end

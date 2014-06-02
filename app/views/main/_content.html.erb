@@ -3,7 +3,7 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&appId=1524815011076920&version=v2.0";
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&appId=652492134825256&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -52,12 +52,12 @@
       <div class="row">     
       
 	      <div class="home-content">	      
-          <h1 style="font-family:Nanum Gothic; ">"스포츠를 통한 기부를 상상하다."</h1><h1 style="font-family:Nanum Gothic;"><span >김승훈의 Give Runner</span></h1>			
+          <h1 style="font-family:Nanum Gothic; ">"Imagine Sports Charity! 스포츠를 통한 기부를 상상하다!"</h1><h1 style="font-family:Nanum Gothic;"><span >Give + Runner</span></h1>			
 				
 				<div class="subscribe-box">
-					<h6 style="font-family:Nanum Gothic;">메일 주소를 입력하시면 응원이 시작됩니다!</h6>
-						<input type="text" id="email-subscribe" name="email-subscribe" class="email required">
-						<input type="submit"  class="button" value="SEND" id="submit_subscribe" onclick="add_subscribe();">  
+					<h6 style="font-family:Nanum Gothic;">Subscribe Give Runner Activity<br style="display:block;">메일 주소를 입력하시면 응원이 시작됩니다!</h6>
+						<input type="text" id="email-subscribe" name="email-subscribe" class="email required" placeholder="email address...">
+						<input type="submit"  class="button" value="SEND" id="submit_subscribe" onclick="add_subscribe();">
 				</div>
 				
 				<div class="subscribe_message">
@@ -289,17 +289,17 @@ function add_subscribe(){
   dataType: "json",
   success: function(data) {
     if (data == "fail"){
-      alert("이미 구독하고 계신 메일주소입니다.");
+      alert("이미 구독하고 계신 메일주소입니다. This mail is Subscribing.");
     }
     else if (data == "wrong"){
-      alert('메일 주소 양식이 맞지 않습니다.');
+      alert('메일 주소 양식이 맞지 않습니다. Wrong email format.');
       }
       else{
-      alert( data + '님, 구독해주셔서 감사합니다. 메일이 저장되었습니다.');
+      alert( data + '님, 구독해주셔서 감사합니다. 메일이 저장되었습니다. Thank you for subscribing!');
     }
   },
 error: function(){
-  alert('알 수 없는 오류가 발생하였습니다. 아래의 피드백으로 연락처를 보내주시면 구독신청 및 문제해결을 하겠습니다.');
+  alert('Error! Send email to "minyoung9353@gmail.com" please... 알 수 없는 오류가 발생하였습니다. 아래의 피드백으로 연락처를 보내주시면 구독신청 및 문제해결을 하겠습니다.');
 }
       
       
